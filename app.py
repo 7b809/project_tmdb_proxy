@@ -7,7 +7,7 @@ from requests.exceptions import Timeout, ConnectionError, HTTPError
 app = Flask(__name__)
 CORS(app)
 
-TMDB_API_KEY = os.environ.get("TMDB_API_KEY")
+TMDB_API_KEY = os.getenv("VITE_API_KEY")
 TMDB_BASE_URL = "https://api.themoviedb.org"
 
 
